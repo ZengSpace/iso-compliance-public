@@ -97,7 +97,7 @@ function renderSummary() {
   const recentCount = counts.recentRows ?? ((state.data.updates || []).length + (state.data.recentOtherOatiUpdates || []).length);
   const watchCount = counts.baselineInterconnectionRows ?? (state.data.baselineInterconnectionWatchlist || []).length;
 
-  els.currentRead.textContent = `${hitCount} direct interconnection-keyword update${hitCount === 1 ? '' : 's'}`;
+  els.currentRead.textContent = hitCount;
   els.windowLabel.textContent = `${formatDate(meta.windowStart)} to ${formatDate(meta.windowEnd)} (${meta.windowDays || 14} days)`;
   els.recentCount.textContent = recentCount;
   els.watchCount.textContent = watchCount;
