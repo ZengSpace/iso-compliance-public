@@ -93,7 +93,8 @@ th, td { border-bottom: 1px solid var(--border); padding: 18px; text-align: left
 th { background: rgba(255,255,255,0.05); color: var(--muted); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; }
 td { color: #dbe7ff; line-height: 1.5; }
 .doc-title { color: var(--text); font-weight: 850; }
-.doc-summary { color: var(--muted); margin-top: 6px; }
+.doc-summary { color: var(--muted); margin-top: 6px; white-space: pre-line; }
+.proposal-impact { white-space: pre-line; }
 .badge { border-radius: 999px; display: inline-block; font-size: 0.72rem; font-weight: 850; letter-spacing: 0.04em; padding: 6px 9px; text-transform: uppercase; }
 .badge--hit { background: rgba(52, 211, 153, 0.16); color: var(--good); }
 .badge--watch { background: rgba(251, 191, 36, 0.16); color: var(--warn); }

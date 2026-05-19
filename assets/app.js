@@ -84,7 +84,7 @@ function renderTable() {
       <td>${escapeHtml(formatDate(row.updated))}</td>
       <td><strong>${escapeHtml(row.source || '—')}</strong><div class="muted">${escapeHtml(row.folder || '—')}</div></td>
       <td>${title}<div class="doc-summary">${escapeHtml(row.summary || '')}</div></td>
-      <td>${escapeHtml(row.proposalImpact || 'Review required.')}</td>
+      <td><div class="proposal-impact">${escapeHtml(row.proposalImpact || 'Review required.')}</div></td>
       <td>${badge(row)}<div class="muted">${escapeHtml(row.confidence || 'low')} confidence</div></td>
     </tr>`;
   }).join('');
