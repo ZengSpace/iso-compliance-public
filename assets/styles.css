@@ -27,8 +27,7 @@ body {
 
 a { color: inherit; }
 .hero {
-  border-bottom: 1px solid var(--border);
-  padding: 72px 24px 44px;
+  padding: 72px 24px 74px;
 }
 .hero__inner, main, footer { max-width: 1180px; margin: 0 auto; }
 .eyebrow {
@@ -55,7 +54,7 @@ h2 { margin: 0; font-size: clamp(1.4rem, 3vw, 2.2rem); letter-spacing: -0.03em; 
 .button--ghost { background: rgba(255,255,255,0.06); color: var(--text); }
 .button:hover, .chip:hover { transform: translateY(-1px); border-color: rgba(97, 218, 251, 0.55); }
 
-main { padding: 28px 24px 56px; }
+main { padding: 0 24px 56px; }
 .status-grid { display: grid; gap: 16px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: -54px; }
 .status-card, .panel, .table-panel {
   background-color: var(--bg);
