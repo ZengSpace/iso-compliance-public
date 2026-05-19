@@ -59,15 +59,17 @@ main { padding: 28px 24px 56px; }
 .status-grid { display: grid; gap: 16px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: -54px; }
 .status-card, .panel, .table-panel {
   background-color: var(--bg);
-  background-image: linear-gradient(180deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035));
+  background: linear-gradient(180deg, rgba(255,255,255,0.075), rgba(255,255,255,0.035)) var(--bg);
   border: 1px solid var(--border);
   border-radius: 24px;
   box-shadow: var(--shadow);
+  position: relative;
+  z-index: 10;
 }
 .status-card { min-height: 140px; padding: 18px 20px; }
 .status-card--primary {
   background-color: var(--bg);
-  background-image: linear-gradient(135deg, rgba(97,218,251,0.22), rgba(139,92,246,0.18));
+  background: linear-gradient(135deg, rgba(97,218,251,0.22), rgba(139,92,246,0.18)) var(--bg);
 }
 .label { color: var(--muted); display: block; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
 .status-card strong { display: block; font-size: clamp(1.4rem, 2.5vw, 2.2rem); line-height: 1.1; margin: 12px 0 8px; letter-spacing: -0.02em; font-weight: 700; }
