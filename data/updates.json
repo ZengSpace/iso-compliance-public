@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "provider": "SWPP",
+    "sourcePage": "https://www.oasis.oati.com/SWPP/index.html",
+    "capturedEndpoint": "Pending automated browser collector",
+    "captureTimestamp": "2026-05-19T06:36:03Z",
+    "generatedAt": "2026-05-19T06:56:24Z",
+    "windowStart": "2026-05-05",
+    "windowEnd": "2026-05-19",
+    "windowDays": 14,
+    "keywords": [
+      "interconnection",
+      "generator",
+      "queue",
+      "lgia",
+      "sgia",
+      "gia",
+      "attachment v",
+      "disis",
+      "gir",
+      "transition",
+      "deliverability",
+      "site control",
+      "study process",
+      "facility",
+      "model",
+      "bp 7250",
+      "business practice",
+      "tariff"
+    ],
+    "counts": {
+      "sourceRows": 3,
+      "recentRows": 1,
+      "recentInterconnectionRows": 0,
+      "recentOtherRows": 1,
+      "baselineInterconnectionRows": 2
+    }
+  },
+  "updates": [],
+  "recentOtherOatiUpdates": [
+    {
+      "title": "Seed: Monitor initialized - collector data pending",
+      "updated": "2026-05-19",
+      "source": "SWPP OATI",
+      "folder": "Monitor Status",
+      "documentType": "monitor-status",
+      "url": "https://www.oasis.oati.com/SWPP/index.html",
+      "file": "",
+      "summary": "The changelog page is live. The next step is connecting the OATI collector and replacing this seed record with normalized source rows.",
+      "proposalImpact": "No proposal requirement change identified yet.",
+      "confidence": "medium",
+      "status": "recent-non-keyword",
+      "keywordHit": false,
+      "tags": [
+        "monitor",
+        "status"
+      ]
+    }
+  ],
+  "baselineInterconnectionWatchlist": [
+    {
+      "title": "Baseline watch item: Generator interconnection procedures and business practices",
+      "updated": "2026-04-15",
+      "source": "SWPP OATI",
+      "folder": "Baseline Interconnection Watchlist",
+      "documentType": "watchlist",
+      "url": "https://www.oasis.oati.com/SWPP/index.html",
+      "file": "",
+      "summary": "Track updates involving generator interconnection, queue, LGIA/SGIA/GIA, Attachment V, DISIS, site control, deposits, study process, deliverability, models, and tariff/business-practice revisions.",
+      "proposalImpact": "Potential changes can affect proposal assumptions, application package requirements, milestone tracking, and interconnection cost/risk language.",
+      "confidence": "medium",
+      "status": "baseline-watch",
+      "keywordHit": true,
+      "tags": [
+        "interconnection",
+        "generator",
+        "queue",
+        "tariff",
+        "business practice"
+      ]
+    },
+    {
+      "title": "Baseline watch item: Stakeholder decks and interim notices",
+      "updated": "2026-04-10",
+      "source": "SPP Public Sources",
+      "folder": "Baseline Interconnection Watchlist",
+      "documentType": "watchlist",
+      "url": "https://www.spp.org/",
+      "file": "",
+      "summary": "Monitor stakeholder meeting decks, agendas, minutes, revision requests, and special postings because material interconnection changes may appear there before formal tariff/manual updates.",
+      "proposalImpact": "Early warning for proposal teams before formal document revisions are published.",
+      "confidence": "medium",
+      "status": "baseline-watch",
+      "keywordHit": true,
+      "tags": [
+        "stakeholder",
+        "interconnection",
+        "notice",
+        "presentation"
+      ]
+    }
+  ],
+  "notes": [
+    "This is a static GitHub Pages changelog generated from normalized source rows.",
+    "A zero count for direct interconnection-keyword updates should be read as no matching items in the current source snapshot/window, not as proof that no regulatory changes occurred across all SPP/SWPP sources.",
+    "Production coverage should combine OATI with SPP public document groups, business practices, tariff filings, revision requests, and stakeholder materials."
+  ]
+}

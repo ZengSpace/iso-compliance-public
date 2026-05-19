@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SWPP / OATI Interconnection Changelog</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">ISO Compliance Monitor</p>
+      <h1>SWPP / OATI Interconnection Changelog</h1>
+      <p class="lede">A static GitHub Pages view of recent source changes, interconnection-keyword hits, and baseline watch items for proposal support.</p>
+      <div class="hero__actions">
+        <a class="button" href="#updates">View updates</a>
+        <a class="button button--ghost" id="source-link" href="https://www.oasis.oati.com/SWPP/index.html" rel="noreferrer">Open source page</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="status-grid" aria-label="Monitor status">
+      <article class="status-card status-card--primary">
+        <span class="label">Current read</span>
+        <strong id="current-read">Loading…</strong>
+        <span id="window-label" class="muted">Checking monitor window</span>
+      </article>
+      <article class="status-card">
+        <span class="label">Recent OATI activity</span>
+        <strong id="recent-count">—</strong>
+        <span class="muted">all rows in current window</span>
+      </article>
+      <article class="status-card">
+        <span class="label">Baseline watchlist</span>
+        <strong id="watch-count">—</strong>
+        <span class="muted">interconnection-relevant rows being monitored</span>
+      </article>
+      <article class="status-card">
+        <span class="label">Last generated</span>
+        <strong id="generated-at">—</strong>
+        <span class="muted" id="capture-at">Source capture pending</span>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel__header">
+        <div>
+          <p class="eyebrow">Filters</p>
+          <h2>Changelog views</h2>
+        </div>
+        <div class="controls" role="group" aria-label="View filter">
+          <button class="chip is-active" data-view="interconnection">Interconnection hits</button>
+          <button class="chip" data-view="recent">All recent OATI</button>
+          <button class="chip" data-view="watchlist">Baseline watchlist</button>
+        </div>
+      </div>
+      <div class="search-row">
+        <input id="search" type="search" placeholder="Search title, folder, summary, impact…" />
+        <span id="row-count" class="muted">0 rows</span>
+      </div>
+    </section>
+
+    <section id="updates" class="table-panel" aria-live="polite">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Source / Folder</th>
+              <th>Document</th>
+              <th>Proposal impact</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="updates-body">
+            <tr><td colspan="5">Loading changelog data…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="notes panel">
+      <p class="eyebrow">Monitor notes</p>
+      <ul id="notes-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <span>Generated from <code>data/updates.json</code>.</span>
+    <span>Static prototype; production collector pending.</span>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
